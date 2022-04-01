@@ -3,7 +3,7 @@ const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Xeno Invaders NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p = ' The Xeno Invaders NFT is a generative art project of 5000 Xeno Invaders surfing though the universe waiting to be minted and collected!';
+const welcome_p = ' The Xeno Invaders NFT is a generative art project of 5000 Xeno Invaders surfing through the universe waiting to be minted and collected!';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";
