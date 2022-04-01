@@ -5,9 +5,9 @@
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: "Luckiest+Guy", sans-serif;
-  --font-secondary: "Luckiest+Guy", serif;
-  --font-code: "Roboto", monospace;
+  --font-primary: "Luckiest+Guy";
+  --font-secondary: "Luckiest+Guy";
+  --font-code: "Luckiest+Guy";
   --bg-color: #020000ef;
   --bg-color-transparent: #41bee4;
   --font-color: #ffffff;
