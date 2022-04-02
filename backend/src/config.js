@@ -7,14 +7,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
+const namePrefix = "Xeno Invader";
 const description = "Xeno Invaders NFT is a generative art project of 5000 Xeno Invaders surfing through the universe waiting to be minted and collected!";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 4945,
+    growEditionSizeTo: 4920,
     layersOrder: [
       { name: "Background" },
       { name: "Xeno" },
@@ -53,7 +53,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "", // Replace with your website or remove this line if you do not have one.
+  external_url: "Xenoinvaders.com", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -61,7 +61,7 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Xeno Invaders';
@@ -70,14 +70,14 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const OWNER_ADDRESS = '0x90Bec154dA5E7fFBC0dfa04C40742CB3D91d61F0';
 const TREASURY_ADDRESS = '0x90Bec154dA5E7fFBC0dfa04C40742CB3D91d61F0';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = .001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 15; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 15; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-31T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-06-01T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-03-30T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-06T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x90Bec154dA5E7fFBC0dfa04C40742CB3D91d61F0"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
@@ -108,7 +108,7 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "XENO",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
